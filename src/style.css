@@ -16,6 +16,10 @@ form {
     margin-bottom: 20px;
 }
 
+.container {
+    margin-bottom: 60px;
+}
+
 .main-info ul {
     padding: 0;
     color: #8D8DAA;
@@ -80,4 +84,13 @@ form .search-input {
 .active {
     color: #000;
     cursor: default;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+small {
+    padding-left: 8px;
 }
