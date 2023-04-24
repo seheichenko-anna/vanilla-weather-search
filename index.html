@@ -18,41 +18,33 @@
 <body>
     <div class="app">
         <div class="wrapper">
-            <div class="container text-center">
-                <form id="search-form">
-                    <div class="row">
-                        <div class="col-9">
-                            <input type="search" placeholder="Enter a city..." class="form-control search-input"
-                                id="city-input" autocomplete="off">
-                        </div>
-                        <div class="col-3 p-0">
-                            <input type="submit" class="btn btn-primary w-100" value="Search">
-                        </div>
-                    </div>
-                </form>
-                <div class="main">
-                    <div class="row">
-                        <div class="col-6 main-info">
-                            <h1 id="city"> </h1>
-
-                            <ul>
-                                <li>Last update: <span id="date"></span></li>
-                                <li id="description">
-                                    Clouds
-                                </li>
-                                <li>Humidity: <span id="humidity"></span>%</li>
-                                <li>Wind: <span id="wind"></span> km/h</li>
-                            </ul>
-                        </div>
-                        <div class="col-2 main-icon"><img src="" alt="" id="icon"></div>
-                        <div class="col-4 main-temperature">
-                            <p><span id="temperature"> </span> <span class="units"> <a href="#" id="celsius-link"
-                                        class="active">°C</a>|<a href="#" id="fahrenheit-link">°F</a> </span></p>
-                        </div>
-                    </div>
-
-
+            <form id="search-form">
+                <div class="search-city-input">
+                    <input type="search" placeholder="Enter a city..." class="form-control search-input" id="city-input"
+                        autocomplete="off">
                 </div>
+                <div class="search-city-btn">
+                    <input type="submit" class="btn btn-primary w-100" value="Search">
+                </div>
+            </form>
+            <div class="name-current-city">
+                <h1 id="city"> </h1>
+            </div>
+            <div class="current-weather">
+                <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="weather icon" id="icon" width="100">
+                <p id="temperature"></p>
+                <div class="units"><sup>°C</sup></div>
+            </div>
+            <ul class="current-weather-info-list">
+                <li>Last update: <span id="date"></span></li>
+                <li id="description">
+                    Clouds
+                </li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+            <div class="weather-forecast" id="forecast">
+
             </div>
             <small><a href="https://github.com/seheichenko-anna/vanilla-weather-search.git">Open-source code</a></small>
         </div>
